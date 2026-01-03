@@ -7,14 +7,16 @@ const Education = () => {
             school: "Chandigarh University, Mohali",
             degree: "Bachelor of Engineering in Computer Science",
             year: "2021 - 2024",
-            description: "Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems."
+            description: "Relevant coursework: Data Structures, Machine Learning, Computer Networks, Internet of Things (IoT).",
+            projects: "Few of my projects: Gas Pipeline Monitoring System, Food Delivery App, Cloud Gaming Platform."
         },
         {
             id: 2,
             school: "Government Polytechnic, Ranchi",
             degree: "Diploma in Computer Science",
             year: "2018 - 2021",
-            description: "Relevant coursework: Data Structures, Algorithms, Web Development, Database Systems."
+            description: "Relevant coursework: Data Structures, Algorithms, Database Systems, Java, Python, Web Development.",
+            projects: "Few of my projects: Official Website for college, Library Management System."
         },
     ];
 
@@ -28,6 +30,7 @@ const Education = () => {
                         <p className="degree">{item.degree}</p>
                         <p className="year">{item.year}</p>
                         <p className="description">{item.description}</p>
+                        {/* <p className="projects">{item.projects}</p> */}
                     </div>
                 ))}
             </div>

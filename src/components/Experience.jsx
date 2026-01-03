@@ -7,7 +7,10 @@ const Experience = () => {
             role: "Product Engineer",
             company: "Tata Consultancy Services",
             duration: "Sep 2024 - Present",
-            description: "Developed and maintained web applications using React and Node.js. Collaborated with cross-functional teams to deliver high-quality software."
+            description1: "Designed and developed 3 SpringBoot based microservices and 20+ RESTful APIs supporting enterprise-scale banking applications.",
+            description2: "Implemented event-driven communication using Apache Kafka to enable asynchronous processing and reliable data flow across backend services.",
+            description3: "Delivered 9+ end-to-end backend features, ensuring scalability, security, and high performance across complex business workflows.",
+            description4: "Automated build and deployment pipelines using Jenkins CI/CD, improving release reliability and reducing manual deployment effort.",
         }
     ];
 
@@ -20,7 +23,10 @@ const Experience = () => {
                         <h3>{item.role}</h3>
                         <h4 className="company">{item.company}</h4>
                         <p className="duration">{item.duration}</p>
-                        <p className="description">{item.description}</p>
+                        <p className="description">{item.description1}</p>
+                        <p className="description">{item.description2}</p>
+                        <p className="description">{item.description3}</p>
+                        <p className="description">{item.description4}</p>
                     </div>
                 ))}
             </div>

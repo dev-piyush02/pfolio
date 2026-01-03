@@ -1,5 +1,5 @@
 import React from 'react';
-import './Technologies.css';
+import '../App.css';
 
 const Technologies = () => {
     const techs = [

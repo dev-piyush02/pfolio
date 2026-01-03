@@ -9,7 +9,7 @@ const Connect = () => {
                 <div className="social-links">
                     <a href="mailto:mailpiyush02@yahoo.com" className="social-btn">Email Me</a>
                     <a href="https://www.linkedin.com/in/linkpiyush02/" target="_blank" rel="noopener noreferrer" className="social-btn">LinkedIn</a>
-                    <a href="https://github.com/devpiyush02" target="_blank" rel="noopener noreferrer" className="social-btn">GitHub</a>
+                    <a href="https://github.com/dev-piyush02" target="_blank" rel="noopener noreferrer" className="social-btn">GitHub</a>
                     {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-btn">Twitter</a> */}
                 </div>
             </div>

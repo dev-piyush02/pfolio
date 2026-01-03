@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import '../App.css';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -8,7 +8,8 @@ const Footer = () => {
         <footer className="footer-section">
             <div className="footer-content">
                 <p>&copy; {currentYear} Piyush. All rights reserved.</p>
-                <p className="footer-built-with">Built with React & Vite</p>
+                <p>Email: mailpiyush02@yahoo.com</p>
+                <p className="footer-built-with">Built with React, Vite and 🩷</p>
             </div>
         </footer>
     );
