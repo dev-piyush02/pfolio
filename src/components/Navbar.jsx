@@ -12,7 +12,7 @@ const Navbar = () => {
 
   React.useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'education', 'experience', 'projects', 'connect'];
+      const sections = ['home', 'education', 'experience', 'technologies', 'projects', 'connect'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -60,6 +60,9 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <a href="#experience" className={`nav-links ${activeSection === 'experience' ? 'active' : ''}`} onClick={() => handleLinkClick('experience')}>Experience</a>
+          </li>
+          <li className="nav-item">
+            <a href="#technologies" className={`nav-links ${activeSection === 'technologies' ? 'active' : ''}`} onClick={() => handleLinkClick('technologies')}>Technologies</a>
           </li>
           <li className="nav-item">
             <a href="#projects" className={`nav-links ${activeSection === 'projects' ? 'active' : ''}`} onClick={() => handleLinkClick('projects')}>Projects</a>
