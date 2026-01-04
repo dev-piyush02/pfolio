@@ -33,6 +33,7 @@ function App() {
       <Technologies />
       <Projects />
       <Connect />
+      <hr className="div-line" />
       <Footer />
     </div>
   );
