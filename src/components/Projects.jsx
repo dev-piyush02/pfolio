@@ -9,7 +9,7 @@ const Projects = () => {
             description: "Leefpad is a simple note-taking app that allows users to create notes without authentication, enabling instant access across devices. Accesing and managing notes is secure and handled through JWT authentication.",
             technologies: "SpringBoot, JWT, HTTPOnly, React, MongoDB",
             image: "/leaf-pad.png",
-            demoLink: "#",
+            demoLink: "https://leafpad.theidle.in",
             github: "https://github.com/dev-piyush02/leefpad"
         },
         {
@@ -18,7 +18,7 @@ const Projects = () => {
             description: "Gas Pipeline Monitoring System is a web application that focuses on helping industries to monitor the gas pipelines in real-time, identify any leaks in the system and alert the relevant authorities.",
             technologies: "Python, Django, ESP32, IoT, AWS",
             image: "/gas-ppln.jpg",
-            demoLink: "#",
+            demoLink: "/not-found",
             github: "https://github.com/dev-piyush02/GasPipelineMonitoring"
         },
         {
@@ -27,7 +27,7 @@ const Projects = () => {
             description: "Gaming Fantix is a web application that allows users to stream and play video games on the cloud. Removing the hassle of downloading, installing and managing the game on their device.",
             technologies: "Python, Django, AWS, Unity",
             image: "/e-sports.jpg",
-            demoLink: "#",
+            demoLink: "/not-found",
             github: "https://github.com/dev-piyush02/gamingfantix.github.io"
         }
     ];

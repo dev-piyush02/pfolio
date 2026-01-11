@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Education from './components/Education';
@@ -7,10 +8,12 @@ import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import Connect from './components/Connect';
 import Footer from './components/Footer';
+import NotFound from './components/NotFound';
 import './App.css';
 
 function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -24,17 +27,34 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
+
   return (
     <div className="App">
-      <Navbar />
-      <Hero />
-      <Education />
-      <Experience />
-      <Technologies />
-      <Projects />
-      <Connect />
-      <hr className="div-line" />
-      <Footer />
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Navbar theme={theme} toggleTheme={toggleTheme} />
+            <Hero />
+            <Education />
+            <Experience />
+            <Technologies />
+            <Projects />
+            <Connect />
+            <hr className="div-line" />
+            <Footer />
+          </>
+        } />
+        <Route path="/not-found" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </div>
   );
 }
