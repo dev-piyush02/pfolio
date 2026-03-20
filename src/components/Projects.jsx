@@ -12,7 +12,7 @@ const Projects = () => {
             demoLink: "https://leafpad.theidle.in",
             github: "https://github.com/dev-piyush02/leefpad"
         },
-        {
+        { 
             id: 2,
             title: "Gas Pipeline Monitoring System",
             description: "Gas Pipeline Monitoring System is a web application that focuses on helping industries to monitor the gas pipelines in real-time, identify any leaks in the system and alert the relevant authorities.",
