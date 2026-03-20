@@ -6,7 +6,7 @@ const Projects = () => {
         {
             id: 1,
             title: "Leefpad | Anywhere Notes",
-            description: "Leefpad is a simple note-taking app that allows users to create notes without authentication, enabling instant access across devices. Accesing and managing notes is secure and handled through JWT authentication.",
+            description: "Create notes instantly, access them securely later, a clean sticky notes app built with React, Spring Boot, and MongoDB. Designed for a smooth experience with no login barriers, while creating a new note.",
             technologies: "SpringBoot, JWT, HTTPOnly, React, MongoDB",
             image: "/leaf-pad.png",
             demoLink: "https://leafpad.theidle.in",
